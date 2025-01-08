@@ -18,13 +18,13 @@ class Truck extends Vehicle implements AbleToTow {
   towingCapacity!: number;
 
   constructor(
-    vin: string,
-    color: string,
-    make: string,
-    model: string,
-    year: number,
-    weight: number,
-    topSpeed: number,
+    _vin: string,
+    _color: string,
+    _make: string,
+    _model: string,
+    _year: number,
+    _weight: number,
+    _topSpeed: number,
     wheels: Wheel[],
     towingCapacity: number
   ) {
