@@ -44,6 +44,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 To run tests, run the following command:
 
 ```
+npm run build
 npm run start
 ```
 
