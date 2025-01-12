@@ -7,15 +7,15 @@ import AbleToTow from '../interfaces/AbleToTow.js';
 
 // TODO: The Truck class should extend the Vehicle class and should implement the AbleToTow interface
 class Truck extends Vehicle implements AbleToTow {
-  vin!: string;
-  color!: string;
-  make!: string;
-  model!: string;
-  year!: number;
-  weight!: number;
-  topSpeed!: number;
-  wheels!: Wheel[];
-  towingCapacity!: number;
+  vin: string;
+  color: string;
+  make: string;
+  model: string;
+  year: number;
+  weight: number;
+  topSpeed: number;
+  wheels: Wheel[];
+  towingCapacity: number;
 
   constructor(
     _vin: string,
@@ -29,6 +29,13 @@ class Truck extends Vehicle implements AbleToTow {
     towingCapacity: number
   ) {
     super();
+    this.vin = _vin;
+    this.color = _color;
+    this.make = _make;
+    this.model = _model;
+    this.year = _year;
+    this.weight = _weight;
+    this.topSpeed = _topSpeed;
     this.towingCapacity = towingCapacity;
 
     if (wheels.length !== 4) {
